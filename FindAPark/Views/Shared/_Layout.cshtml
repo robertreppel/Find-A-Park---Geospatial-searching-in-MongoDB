@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.4.4.min.js")" type="text/javascript"></script>
+    <script type="text/javascript" charset="utf-8">
+
+        $(document).ready(function () {
+            $('#txtValue').keyup(function () {
+                sendValue($(this).val());
+
+            });
+
+        });        
+    </script>
+</head>
+
+<body>
+<h1>Great U.S. Parks Near You</h1>
+    @RenderBody()
+</body>
+</html>

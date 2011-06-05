@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.4.4.min.js")" type="text/javascript"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery.autocomplete.js")"></script>
+        <link href="@Url.Content("~/Content/jquery.autocomplete.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" charset="utf-8">
+
+        $(document).ready(function () {
+            $("#searchTerm").autocomplete('@Url.Action("Cities", "Geo")');
+        });
+
+        function FindFirstCity() {
+            var url = '@Url.Action("Search", "Geo")?cityAndState=' + $("#searchTerm").val();
+            $.getJSON(url,
+                  null,
+                 function (data) {
+                     $('#display').html('<p>Name: ' + data.Name + '</p');
+                     $('#display').append('<p>Lat: ' + data.Latitude + '</p');
+                     $('#display').append('<p>Long: ' + data.Longitude + '</p');
+                     FindNearestParks(data.Latitude, data.Longitude, 100);
+                 }
+             );
+        }
+
+        //http://localhost:10009/Geo/FindParksNear?latitude=49&longitude=100&kmDistance=200
+        function FindNearestParks(latitude, longitude, kmDistance) {
+            var url = '@Url.Action("FindParksNear", "Geo")?latitude=' + latitude + '&longitude=' + longitude + '&kmDistance=' + kmDistance
+            $.getJSON(url,
+                  null,
+                 function (data) {
+                     $('#parks').html('<h3>Parks within 100 km:</h3>');
+                    jQuery.each(data, function(index, itemData) {
+                        $('#parks').append('<p>' + itemData.Name + ', ' + itemData.StateCode + '</p');
+                    });
+                 }
+             );
+        }
+    </script>
+</head>
+
+<body>
+ <label for="txtValue">Enter a city and state: </label>
+    <input type="text" name="searchTerm" value="" size="30" id="searchTerm" />
+    <input type="button" name="findNearest" value="Find" onclick="FindFirstCity();" />
+    
+    <div id="display"></div>
+    <br />
+    <div id="parks"></div>
+</body>
+</html>
