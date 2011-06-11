@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoData", "GeoData\GeoData.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindAPark", "FindAPark\FindAPark.csproj", "{B57DA464-A1CC-493C-8D74-79C10C6EC67B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoDataChangeNotifier", "GeoDataChangeNotifier\GeoDataChangeNotifier.csproj", "{C8C19C7F-B676-4F0A-8FA8-3BB3E653F842}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messages", "Messages\Messages.csproj", "{D042D918-B3D9-4C49-8708-26BC2CDC5024}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,26 @@ Global
 		{B57DA464-A1CC-493C-8D74-79C10C6EC67B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{B57DA464-A1CC-493C-8D74-79C10C6EC67B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{B57DA464-A1CC-493C-8D74-79C10C6EC67B}.Release|x86.ActiveCfg = Release|Any CPU
+		{C8C19C7F-B676-4F0A-8FA8-3BB3E653F842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8C19C7F-B676-4F0A-8FA8-3BB3E653F842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8C19C7F-B676-4F0A-8FA8-3BB3E653F842}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C8C19C7F-B676-4F0A-8FA8-3BB3E653F842}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C8C19C7F-B676-4F0A-8FA8-3BB3E653F842}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C8C19C7F-B676-4F0A-8FA8-3BB3E653F842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8C19C7F-B676-4F0A-8FA8-3BB3E653F842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8C19C7F-B676-4F0A-8FA8-3BB3E653F842}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C8C19C7F-B676-4F0A-8FA8-3BB3E653F842}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C8C19C7F-B676-4F0A-8FA8-3BB3E653F842}.Release|x86.ActiveCfg = Release|Any CPU
+		{D042D918-B3D9-4C49-8708-26BC2CDC5024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D042D918-B3D9-4C49-8708-26BC2CDC5024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D042D918-B3D9-4C49-8708-26BC2CDC5024}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D042D918-B3D9-4C49-8708-26BC2CDC5024}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D042D918-B3D9-4C49-8708-26BC2CDC5024}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D042D918-B3D9-4C49-8708-26BC2CDC5024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D042D918-B3D9-4C49-8708-26BC2CDC5024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D042D918-B3D9-4C49-8708-26BC2CDC5024}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D042D918-B3D9-4C49-8708-26BC2CDC5024}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D042D918-B3D9-4C49-8708-26BC2CDC5024}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

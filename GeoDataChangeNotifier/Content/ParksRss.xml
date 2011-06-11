@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>New US Parks</title>
+    <link>http://localhost:10001/Content/ParksRss.xml</link>
+    <description>Keeping you posted for the Great Outdoors</description>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>Argotic Syndication Framework 2008.0.2.0, http://www.codeplex.com/Argotic</generator>
+    <item>
+      <title>New Park: BRONSON PARK</title>
+      <description>BRONSON PARK is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: COLD BROOK PARK</title>
+      <description>COLD BROOK PARK is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: BIRTHPLACE OF FAMED SONG HISTORICAL MARKER</title>
+      <description>BIRTHPLACE OF FAMED SONG HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: GARDNER HOUSE MUSEUM HISTORICAL MARKER</title>
+      <description>GARDNER HOUSE MUSEUM HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: RIVERSIDE CEMETERY HISTORICAL MARKER</title>
+      <description>RIVERSIDE CEMETERY HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: BATTLE CREEK NUMBER FOUR FIRE STATION HISTORICAL MARKER</title>
+      <description>BATTLE CREEK NUMBER FOUR FIRE STATION HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: BECKLEY SCHOOL HISTORICAL MARKER</title>
+      <description>BECKLEY SCHOOL HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: ERASTUS HUSSEY STATIONMASTER HISTORICAL MARKER</title>
+      <description>ERASTUS HUSSEY STATIONMASTER HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: LOG SCHOOLHOUSE HISTORICAL MARKER</title>
+      <description>LOG SCHOOLHOUSE HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: SAINT THOMAS EPISCOPAL CHURCH HISTORICAL MARKER</title>
+      <description>SAINT THOMAS EPISCOPAL CHURCH HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: VETERANS HOSPITAL NUMBER 100 HISTORICAL MARKER</title>
+      <description>VETERANS HOSPITAL NUMBER 100 HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: BRYANT FARM HISTORICAL MARKER</title>
+      <description>BRYANT FARM HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: HOMER FIRE STATION HISTORICAL MARKER</title>
+      <description>HOMER FIRE STATION HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: CALHOUN COUNTY FAIR HISTORICAL MARKER</title>
+      <description>CALHOUN COUNTY FAIR HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: GOVERNOR'S MANSION HISTORICAL MARKER</title>
+      <description>GOVERNOR'S MANSION HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: ISAAC E CRARY HOUSE HISTORICAL MARKER</title>
+      <description>ISAAC E CRARY HOUSE HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: LIEUTENANT GEORGE A WOODRUFF HISTORICAL MARKER</title>
+      <description>LIEUTENANT GEORGE A WOODRUFF HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: PIONEER SCHOOL HISTORICAL MARKER</title>
+      <description>PIONEER SCHOOL HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: SAMUEL COLEMAN HOUSE HISTORICAL MARKER</title>
+      <description>SAMUEL COLEMAN HOUSE HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: STATE SCHOOL SYSTEM HISTORICAL MARKER</title>
+      <description>STATE SCHOOL SYSTEM HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: WILLIAM W COOK HISTORICAL MARKER</title>
+      <description>WILLIAM W COOK HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: HARVEY RANDALL HOUSE HISTORICAL MARKER</title>
+      <description>HARVEY RANDALL HOUSE HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: WILLOWS CREEK NEIGHBORHOOD PARK</title>
+      <description>WILLOWS CREEK NEIGHBORHOOD PARK is located in WA.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: CIRCLE X RANCH</title>
+      <description>CIRCLE X RANCH is located in CA.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: BETHUNE POINT PARK</title>
+      <description>BETHUNE POINT PARK is located in FL.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: RIEGER PARK</title>
+      <description>RIEGER PARK is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: GRIBBIN PARK</title>
+      <description>GRIBBIN PARK is located in AL.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: PAUL BENNETT RECREATION CENTER</title>
+      <description>PAUL BENNETT RECREATION CENTER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: MCPHERSON PARK</title>
+      <description>MCPHERSON PARK is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: LAKESIDE PARK</title>
+      <description>LAKESIDE PARK is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: ARGYLE STREET PARK</title>
+      <description>ARGYLE STREET PARK is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: MANLY BENNETT MEMORIAL PARK</title>
+      <description>MANLY BENNETT MEMORIAL PARK is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: HURON MEADOWS METROPARK</title>
+      <description>HURON MEADOWS METROPARK is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: MILL POND PARK</title>
+      <description>MILL POND PARK is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: BROOKLYN PRESBYTERIAN CHURCH HISTORICAL MARKER</title>
+      <description>BROOKLYN PRESBYTERIAN CHURCH HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: MICHIGAN CENTRAL RAILROAD DEPOT HISTORICAL MARKER</title>
+      <description>MICHIGAN CENTRAL RAILROAD DEPOT HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: AUSTIN BLAIR HISTORICAL MARKER</title>
+      <description>AUSTIN BLAIR HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: FIRST STATE PRISON HISTORICAL MARKER</title>
+      <description>FIRST STATE PRISON HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: SAINT PAUL'S EPISCOPAL CHURCH HISTORICAL MARKER</title>
+      <description>SAINT PAUL'S EPISCOPAL CHURCH HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: JAMESON FARM HISTORICAL MARKER</title>
+      <description>JAMESON FARM HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: ANN ARBOR RAILROAD HISTORICAL MARKER</title>
+      <description>ANN ARBOR RAILROAD HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: FLORENCE B DEERING MUSEUM HISTORICAL MARKER</title>
+      <description>FLORENCE B DEERING MUSEUM HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: HARTLAND MUSIC HALL HISTORICAL MARKER</title>
+      <description>HARTLAND MUSIC HALL HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: OLD TOWN HALL HISTORICAL MARKER</title>
+      <description>OLD TOWN HALL HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: SAINT STEPHEN'S HISTORICAL MARKER</title>
+      <description>SAINT STEPHEN'S HISTORICAL MARKER is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: LIME LAKE COUNTY PARK</title>
+      <description>LIME LAKE COUNTY PARK is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: HORSESHOE BAY STATE MARINE PARK</title>
+      <description>HORSESHOE BAY STATE MARINE PARK is located in AK.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: BLOOMFIELD PARK</title>
+      <description>BLOOMFIELD PARK is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: OPTIMIST PARK</title>
+      <description>OPTIMIST PARK is located in MI.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: BOWMAN GRAY SWIMMING POOL</title>
+      <description>BOWMAN GRAY SWIMMING POOL is located in NC.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+    <item>
+      <title>New Park: SEAWORLD SAN ANTONIO</title>
+      <description>SEAWORLD SAN ANTONIO is located in TX.</description>
+      <link>http://localhost:10000/</link>
+    </item>
+  </channel>
+</rss>

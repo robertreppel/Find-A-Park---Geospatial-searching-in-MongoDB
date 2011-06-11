@@ -119,6 +119,10 @@
       <Project>{06AAE851-3837-42BB-B9FE-1BC1B1E3B829}</Project>
       <Name>GeoData</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Messages\Messages.csproj">
+      <Project>{D042D918-B3D9-4C49-8708-26BC2CDC5024}</Project>
+      <Name>Messages</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="GeoDataFiles\readme.txt" />

@@ -1,0 +1,167 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="if" priority="1" />
+      <Item value="args" priority="0" />
+      <Item value="Count`1" priority="0" />
+      <Item value="return" priority="0" />
+      <Item value="doImport" priority="0" />
+      <Item value="private" priority="0" />
+      <Item value="public" priority="1" />
+      <Item value="Bus" priority="1" />
+      <Item value="var" priority="2" />
+      <Item value="importer" priority="0" />
+      <Item value="bus" priority="0" />
+      <Item value="A`0" priority="0" />
+      <Item value="Antlr" priority="0" />
+      <Item value="String`0" priority="0" />
+      <Item value="geoName" priority="2" />
+      <Item value="RssFeed`0" priority="0" />
+      <Item value="new" priority="2" />
+      <Item value="RssChannel`0" priority="0" />
+      <Item value="feed" priority="3" />
+      <Item value="channel" priority="0" />
+      <Item value="abstract" priority="0" />
+      <Item value="RssPublisher`0" priority="0" />
+      <Item value="rssPublisher" priority="0" />
+      <Item value="Geoname" priority="0" />
+      <Item value="Admin1Code" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="string" priority="2" />
+      <Item value="webRoot" priority="0" />
+      <Item value="System" priority="1" />
+      <Item value="Web" priority="1" />
+      <Item value="HttpContext`0" priority="2" />
+      <Item value="ApplicationServices" priority="0" />
+      <Item value="siteHost" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NServiceBus.Configure">
+      <Item value="DefaultBuilder`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NServiceBus.IBus">
+      <Item value="Publish`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GeoInfoImport.GeoDataImporter">
+      <Item value="Bus" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NServiceBus.Unicast.Transport.Msmq.Config.ConfigMsmqTransport">
+      <Item value="DBSubcriptionStorage`0" priority="0" />
+      <Item value="MsmqSubscriptionStorage`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@FakeItEasy.A">
+      <Item value="Fake`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:log4net.ILog">
+      <Item value="Info`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GeoData.Geoname">
+      <Item value="GeonameId" priority="1" />
+      <Item value="Name" priority="0" />
+      <Item value="Admin1Code" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GeoDataChangeNotifier.RssFeed">
+      <Item value="Channel" priority="1" />
+      <Item value="AddItem`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Argotic.Syndication.RssFeed">
+      <Item value="Channel" priority="1" />
+      <Item value="AddItem`0" priority="0" />
+      <Item value="Save`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GeoDataChangeNotifier.RssPublisher">
+      <Item value="AddItem`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpServerUtility">
+      <Item value="MapPath`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.HttpContext">
+      <Item value="Current" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpContext">
+      <Item value="Server" priority="0" />
+      <Item value="Request" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpRequest">
+      <Item value="Url" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Uri">
+      <Item value="Host" priority="0" />
+      <Item value="AbsoluteUri" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:packages.config" caret="50" fromTop="1" />
+      <File id="B57DA464-A1CC-493C-8D74-79C10C6EC67B/d:Controllers/f:GeoController.cs" caret="1159" fromTop="17" />
+      <File id="06AAE851-3837-42BB-B9FE-1BC1B1E3B829/f:Geoname.cs" caret="81" fromTop="3" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:TestGeoDataSearches.cs" caret="565" fromTop="4" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:IntegrationTests.cs" caret="333" fromTop="7" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:TestGeoNames.cs" caret="635" fromTop="10" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:Program.cs" caret="844" fromTop="10" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/d:Views/f:_ViewStart.cshtml" caret="49" fromTop="1" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/d:Views/d:Shared/f:_Layout.cshtml" caret="300" fromTop="9" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/d:Controllers/f:HomeController.cs" caret="460" fromTop="10" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/d:Views/d:Home/f:Index.cshtml" caret="55" fromTop="5" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:RssPublisher.cs" caret="201" fromTop="4" />
+      <File id="d:Miscellaneous Files/f:App.config/l:C!?Users?rreppel?Documents?Visual Studio 2010?Projects?NServiceBusLibraryRavenDbExample?LibraryService?App.config" caret="552" fromTop="12" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:app.config" caret="1817" fromTop="10" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="527" fromTop="6" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Global.asax.cs" caret="1227" fromTop="14" />
+      <File id="d:Miscellaneous Files/f:BookMessageHandler.cs/l:C!?Users?rreppel?Documents?Visual Studio 2010?Projects?NServiceBusLibraryRavenDbExample?LibraryService?BookMessageHandler.cs" caret="0" fromTop="0" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:GeoDataImporter.cs" caret="2517" fromTop="18" />
+      <File id="D042D918-B3D9-4C49-8708-26BC2CDC5024/f:GeoInfoImported.cs" caret="149" fromTop="7" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:app.config" caret="1777" fromTop="9" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:Program.cs" caret="478" fromTop="6" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:Program.cs" caret="284" fromTop="4" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:GeoDataImporter.cs" caret="1090" fromTop="18" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:TestGeoDataSearches.cs" caret="602" fromTop="10" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:GeoDataImporter.cs" caret="197" fromTop="4" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:IntegrationTests.cs" caret="412" fromTop="10" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:TestGeoNames.cs" caret="635" fromTop="10" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:Program.cs" caret="1000" fromTop="8" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:GeoDataImporter.cs" caret="370" fromTop="12" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:GeoDataImporter.cs" caret="1956" fromTop="9" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:GeoDataImporter.cs" caret="2074" fromTop="5" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:RssPublisher.cs" caret="31" fromTop="0" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:RssPublisher.cs" caret="591" fromTop="11" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:RssPublisher.cs" caret="512" fromTop="9" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/d:Views/d:Shared/f:_Layout.cshtml" caret="300" fromTop="9" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/d:Controllers/f:HomeController.cs" caret="456" fromTop="10" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:RssPublisher.cs" caret="271" fromTop="5" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:RssPublisher.cs" caret="902" fromTop="22" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:RssPublisher.cs" caret="155" fromTop="3" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:RssPublisher.cs" caret="572" fromTop="14" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="625" fromTop="17" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="504" fromTop="11" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Global.asax.cs" caret="1500" fromTop="22" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Global.asax.cs" caret="1491" fromTop="16" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Global.asax.cs" caret="1227" fromTop="14" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:GeoDataImporter.cs" caret="2517" fromTop="18" />
+      <File id="D042D918-B3D9-4C49-8708-26BC2CDC5024/f:GeoInfoImported.cs" caret="258" fromTop="15" />
+      <File id="D042D918-B3D9-4C49-8708-26BC2CDC5024/f:GeoInfoImported.cs" caret="80" fromTop="4" />
+      <File id="D042D918-B3D9-4C49-8708-26BC2CDC5024/f:GeoInfoImported.cs" caret="0" fromTop="0" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.9\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

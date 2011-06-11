@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using FluentMongo.Linq;
 using MongoDB.Bson.Serialization;
@@ -82,7 +81,7 @@ namespace GeoData
                     Name=geoname.Name, 
                     Lat=geoname.Latitude, 
                     Long=geoname.Longitude,
-                    StateCode = geoname.Admin1Code
+                    StateCode = geoname.StateCode
                 });
             }
             return results;
@@ -92,7 +91,7 @@ namespace GeoData
         {
             var mongoCollection = _db.GetCollection<Geoname>(PlacesCollection).AsQueryable();
             var result =  mongoCollection
-                .Where(x => x.Name == city && x.Admin1Code == stateCode)
+                .Where(x => x.Name == city && x.StateCode == stateCode)
                 .ToList().FirstOrDefault();
 
             return result;

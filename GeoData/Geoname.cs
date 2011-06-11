@@ -52,6 +52,22 @@ namespace GeoData
         public string Timezone;
         [FieldConverter(ConverterKind.Date, "yyyy-MM-dd")]
         public DateTime? ModificationDate;
+
+        public bool IsCity
+        {
+            get { return FeatureClass == "P"; }
+        }
+
+        public bool IsPark
+        {
+            get { return FeatureClass.Equals("L") && FeatureCode.Equals("PRK"); }
+        }
+
+        public string StateCode
+        {
+            get { return Admin1Code; }
+            set { Admin1Code = value; }
+        }
     }
 
     public class Location   
