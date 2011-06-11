@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using GeoData;
+using NServiceBus;
 
 namespace GeoInfoImport
 {
@@ -11,6 +12,17 @@ namespace GeoInfoImport
     {
         static void Main(string[] args)
         {
+            var bus =  Configure.With() 
+               .Log4Net()
+               .DefaultBuilder()
+               .XmlSerializer()
+               .MsmqTransport()
+               .MsmqSubscriptionStorage()
+               .UnicastBus()
+                   .LoadMessageHandlers()
+               .CreateBus()
+               .Start();
+
             bool doImport = AreThereValidParametersForDataImportIn(args);
 
             var geoRepository = new MongoGeoDataStore();
@@ -18,6 +30,7 @@ namespace GeoInfoImport
             {
                 Console.WriteLine("Started import at: {0}", DateTime.Now.ToShortTimeString());
                 var importer = new GeoDataImporter(new Log(), geoRepository);
+                importer.Bus = bus;
                 importer.ImportGeonamesFrom(args[1]);
                 Console.WriteLine("Finished import at: {0}", DateTime.Now.ToShortTimeString());
                 Console.WriteLine("No. of geonames in DB: {0}", geoRepository.GeonamesCount());
@@ -29,6 +42,11 @@ namespace GeoInfoImport
 
         private static bool AreThereValidParametersForDataImportIn(string[] args)
         {
+
+            if(args.Count() == 0)
+            {
+                return false;
+            }
             bool doImport = false;
             if (!String.IsNullOrEmpty(args[0]))
             {

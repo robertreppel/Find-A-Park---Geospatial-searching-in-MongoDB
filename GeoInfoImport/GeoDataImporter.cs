@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using FileHelpers;
 using GeoData;
+using NServiceBus;
 
 namespace GeoInfoImport
 {
@@ -8,6 +10,7 @@ namespace GeoInfoImport
     {
         private readonly ILog _log;
         private readonly IGeoDataStore _geoDataStore;
+        public IBus Bus { get; set; }
 
         public GeoDataImporter(ILog log, IGeoDataStore geoDataStore)
         {
@@ -27,6 +30,12 @@ namespace GeoInfoImport
             {
                 //Store the name in a format suitable for case-insensitive searching:
                 geoName.Name = geoName.Name.ToUpper();
+
+                if (Bus != null)
+                {
+                    //Only publish if a message bus has been instantiated:
+                    Bus.Publish(new GeoInfoImported(geoName));
+                }
 
                 if (geoName.FeatureClass == "P")
                 {
@@ -66,6 +75,16 @@ namespace GeoInfoImport
             park.StateCode = geoName.Admin1Code;
 
             _geoDataStore.Save(park);
+        }
+    }
+
+    internal class GeoInfoImported : IMessage
+    {
+        public Geoname GeoName { get; private set; }
+
+        public GeoInfoImported(Geoname geoName)
+        {
+            GeoName = geoName;
         }
     }
 }
