@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using FileHelpers;
 using GeoData;
+using log4net;
 using NServiceBus;
 
 namespace GeoInfoImport
@@ -14,7 +15,7 @@ namespace GeoInfoImport
 
         public GeoDataImporter(ILog log, IGeoDataStore geoDataStore)
         {
-            this._log = log;
+            _log = log;
             _geoDataStore = geoDataStore;
         }
 
@@ -59,7 +60,7 @@ namespace GeoInfoImport
         private void SaveCity(Geoname geoName, long cnt)
         {
             _geoDataStore.Save(geoName);
-            _log.WriteInfoAbout(geoName, cnt);
+            _log.Info(String.Format("Id: {0}, Name: {1}, State: {2}", geoName.GeonameId, geoName.Name, geoName.Admin1Code));
         }
 
         private void SavePark(Geoname geoName)

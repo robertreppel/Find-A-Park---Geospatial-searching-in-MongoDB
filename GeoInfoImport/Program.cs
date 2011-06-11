@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using GeoData;
+using log4net;
 using NServiceBus;
 
 namespace GeoInfoImport
@@ -29,7 +30,8 @@ namespace GeoInfoImport
             if(doImport)
             {
                 Console.WriteLine("Started import at: {0}", DateTime.Now.ToShortTimeString());
-                var importer = new GeoDataImporter(new Log(), geoRepository);
+                ILog logger = LogManager.GetLogger("Name");
+                var importer = new GeoDataImporter(logger, geoRepository);
                 importer.Bus = bus;
                 importer.ImportGeonamesFrom(args[1]);
                 Console.WriteLine("Finished import at: {0}", DateTime.Now.ToShortTimeString());

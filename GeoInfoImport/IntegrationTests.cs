@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using FakeItEasy;
 using GeoData;
+using log4net;
 using NUnit.Framework;
 
 namespace GeoInfoImport
@@ -18,7 +19,7 @@ namespace GeoInfoImport
             const string fileName =
                 @"GeoDataFiles\US10000.txt";
 
-            var log = new Log();
+            var log = A.Fake <ILog>();
             var geoRepository = new MongoGeoDataStore("mongodb://localhost", "geonamestest");
             var geoDataImporter = new GeoDataImporter(log, geoRepository);
             geoDataImporter.ImportGeonamesFrom(fileName);

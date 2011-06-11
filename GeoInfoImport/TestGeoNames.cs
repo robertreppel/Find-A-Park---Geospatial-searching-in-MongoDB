@@ -3,6 +3,7 @@ using System.Linq;
 using System.Text;
 using FakeItEasy;
 using GeoData;
+using log4net;
 using NUnit.Framework;
 
 namespace GeoInfoImport
@@ -21,7 +22,7 @@ namespace GeoInfoImport
             var geoDataImporter = new GeoDataImporter(log, geoRepository);
             geoDataImporter.ImportGeonamesFrom(fileName);
 
-            A.CallTo(() => log.WriteInfoAbout(null, 0)).WithAnyArguments().MustHaveHappened(Repeated.Exactly.Times(357));
+            A.CallTo(() => log.Info(null)).WithAnyArguments().MustHaveHappened(Repeated.Exactly.Times(357));
             A.CallTo(() => geoRepository.Save(new Geoname())).WithAnyArguments().MustHaveHappened(Repeated.Exactly.Times(357));
         }
 

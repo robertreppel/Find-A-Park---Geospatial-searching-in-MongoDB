@@ -105,7 +105,6 @@
   <ItemGroup>
     <Compile Include="GeoDataImporter.cs" />
     <Compile Include="IntegrationTests.cs" />
-    <Compile Include="Log.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestGeoDataSearches.cs" />
