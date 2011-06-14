@@ -38,24 +38,24 @@ namespace GeoDataChangeNotifier
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
 
-            IBus bus = ConfigureMessageBus();
-
-            bus.Subscribe<GeoInfoImported>();
+            ConfigureMessageBus();
         }
 
         private IBus ConfigureMessageBus()
         {
-            SetLoggingLibrary.Log4Net(log4net.Config.XmlConfigurator.Configure);
             var bus = Configure.WithWeb() 
                 .Log4Net()
                 .DefaultBuilder()
                 .XmlSerializer()
                 .MsmqTransport()
+                    .IsTransactional(false)
                 .UnicastBus()
                 .LoadMessageHandlers()
                 .CreateBus()
                 .Start();
-            
+
+            SetLoggingLibrary.Log4Net(log4net.Config.XmlConfigurator.Configure);
+
             return bus;
         }
     }
