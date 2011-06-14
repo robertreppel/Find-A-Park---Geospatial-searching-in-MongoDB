@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using log4net;
+﻿using log4net;
 using Messages;
 using NServiceBus;
 
-namespace GeoDataChangeNotifier
+namespace RssFeedUpdater
 {
     public class GeoInfoImportedMessageHandler : IHandleMessages<GeoInfoImported>
     {
@@ -15,7 +11,9 @@ namespace GeoDataChangeNotifier
             var geoName = message.GeoName;
             if (geoName.IsPark)
             {
-                Logger.Info("Send email about new park information: " + message.GeoName.Name);
+                Logger.Info("Park information imported: " + message.GeoName.Name);
+                var rssPublisher = new ParksRssPublisher();
+                rssPublisher.AddItem(message.GeoName);
             }
         }
 

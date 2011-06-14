@@ -1,22 +1,13 @@
 ﻿using System;
 using System.IO;
 using Argotic.Syndication;
-using GeoData;
 using Messages;
 
-namespace GeoDataChangeNotifier
+namespace RssFeedUpdater
 {
-    internal class RssPublisher
+    internal class ParksRssPublisher
     {
         const string SiteUri = "http://localhost:10001/Content/ParksRss.xml";
-
-        public void DeleteAllItems()
-        {
-            //Create an empty feed, overwriting currently existing items:
-            var feed = new RssFeed();
-            SetChannelInfo(feed);
-            Save(feed);
-        }
 
         public void AddItem(Geoname geoName)
         {
@@ -39,16 +30,9 @@ namespace GeoDataChangeNotifier
             }
         }
 
-        private void SetChannelInfo(RssFeed feed)
-        {
-            feed.Channel.Link           = new Uri(SiteUri);
-            feed.Channel.Title          = "New US Parks";
-            feed.Channel.Description    = "Keeping you posted for the Great Outdoors";
-        }
-
         private static string ParksRssFeedPath()
         {
-            return AppDomain.CurrentDomain.BaseDirectory + "Content/ParksRss.xml";
+            return @"C:\Users\rreppel\Documents\Visual Studio 2010\Projects\Find-A-Park---Geospatial-searching-in-MongoDB\GeoDataChangeNotifier\Content\ParksRss.xml";
         }
 
         private static RssItem CreateRssFeedItem(string name, string state)

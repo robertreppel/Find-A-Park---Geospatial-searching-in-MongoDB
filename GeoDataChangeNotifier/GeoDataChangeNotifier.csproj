@@ -87,7 +87,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RssPublisher.cs" />
+    <Compile Include="ParksRssFeed.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />

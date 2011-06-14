@@ -19,7 +19,7 @@ namespace GeoDataChangeNotifier.Controllers
 
         public ActionResult DeleteParksRssItems()
         {
-            var rssPublisher = new RssPublisher();
+            var rssPublisher = new ParksRssFeed();
             rssPublisher.DeleteAllItems();
             return View();
         }

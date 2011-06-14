@@ -1,6 +1,6 @@
 ﻿using NServiceBus;
 
-namespace Subscriber1
+namespace RssFeedUpdater
 {
     class EndpointConfig : IConfigureThisEndpoint, AsA_Server {}
 }
