@@ -1,5 +1,4 @@
-﻿using GeoData;
-using NServiceBus;
+﻿using NServiceBus;
 
 namespace Messages
 {

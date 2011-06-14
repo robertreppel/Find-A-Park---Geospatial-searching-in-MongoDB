@@ -5,6 +5,7 @@ using System.Text;
 using FakeItEasy;
 using GeoData;
 using log4net;
+using Messages;
 using NUnit.Framework;
 
 namespace GeoInfoImport
@@ -24,7 +25,7 @@ namespace GeoInfoImport
             var geoDataImporter = new GeoDataImporter(log, geoRepository);
             geoDataImporter.ImportGeonamesFrom(fileName);
 
-            Geoname geoName = geoRepository.ByGeonameId(7723040);
+            ImportedGeoname geoName = geoRepository.ByGeonameId(7723040);
             Assert.That(geoName != null);
         }       
     }

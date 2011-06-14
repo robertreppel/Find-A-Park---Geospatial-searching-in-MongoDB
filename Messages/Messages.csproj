@@ -50,13 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GeoInfoImported.cs" />
+    <Compile Include="Geoname.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GeoData\GeoData.csproj">
-      <Project>{06AAE851-3837-42BB-B9FE-1BC1B1E3B829}</Project>
-      <Name>GeoData</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

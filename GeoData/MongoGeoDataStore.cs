@@ -32,21 +32,21 @@ namespace GeoData
             SetupMongoDb();
         }
 
-        public void Save(Geoname geoname)
+        public void Save(ImportedGeoname importedGeoname)
         {
-            MongoCollection<Geoname> mongoCollection = _db.GetCollection<Geoname>(PlacesCollection);
-            mongoCollection.Save(geoname);
+            MongoCollection<ImportedGeoname> mongoCollection = _db.GetCollection<ImportedGeoname>(PlacesCollection);
+            mongoCollection.Save(importedGeoname);
         }
 
         public void Save(Park geoname)
         {
-            MongoCollection<Geoname> mongoCollection = _db.GetCollection<Geoname>(ParksCollection);
+            MongoCollection<ImportedGeoname> mongoCollection = _db.GetCollection<ImportedGeoname>(ParksCollection);
             mongoCollection.Save(geoname);
         }
 
         public void DoIndexing()
         {
-            var mongoCityCollection = _db.GetCollection<Geoname>(PlacesCollection);
+            var mongoCityCollection = _db.GetCollection<ImportedGeoname>(PlacesCollection);
             mongoCityCollection.EnsureIndex(IndexKeys.Ascending("Name"));
             mongoCityCollection.EnsureIndex(IndexKeys.Ascending("Name", "StateCode"));
 
@@ -58,17 +58,17 @@ namespace GeoData
 
         public void DeleteAll()
         {
-            var mongoParksCollection = _db.GetCollection<Geoname>(ParksCollection);
+            var mongoParksCollection = _db.GetCollection<ImportedGeoname>(ParksCollection);
             mongoParksCollection.RemoveAll();
 
-            var mongoCityCollection = _db.GetCollection<Geoname>(PlacesCollection);
+            var mongoCityCollection = _db.GetCollection<ImportedGeoname>(PlacesCollection);
             mongoCityCollection.RemoveAll();
         }
 
 
         public List<Place> PlacesStartingWith(string letters)
         {
-            var mongoCollection = _db.GetCollection<Geoname>(PlacesCollection).AsQueryable();
+            var mongoCollection = _db.GetCollection<ImportedGeoname>(PlacesCollection).AsQueryable();
             var cityGeonameCollection = mongoCollection
                 .Where(x => x.Name.StartsWith(letters.ToUpper()) 
                     && x.FeatureClass == "P")
@@ -87,9 +87,9 @@ namespace GeoData
             return results;
         }
 
-        public Geoname FindBy(string city, string stateCode)
+        public ImportedGeoname FindBy(string city, string stateCode)
         {
-            var mongoCollection = _db.GetCollection<Geoname>(PlacesCollection).AsQueryable();
+            var mongoCollection = _db.GetCollection<ImportedGeoname>(PlacesCollection).AsQueryable();
             var result =  mongoCollection
                 .Where(x => x.Name == city && x.StateCode == stateCode)
                 .ToList().FirstOrDefault();
@@ -114,9 +114,9 @@ namespace GeoData
             return result;
         }
 
-        public Geoname ByGeonameId(long id)
+        public ImportedGeoname ByGeonameId(long id)
         {
-            var mongoCollection = _db.GetCollection<Geoname>(PlacesCollection).AsQueryable();
+            var mongoCollection = _db.GetCollection<ImportedGeoname>(PlacesCollection).AsQueryable();
             return mongoCollection
                 .Where(x => x.GeonameId == id)
                 .ToList().FirstOrDefault();
@@ -128,14 +128,14 @@ namespace GeoData
             {
                 MongoServer server = MongoServer.Create(_connectionString);
                 _db = server.GetDatabase(_mongoDbName);                    
-                BsonClassMap.RegisterClassMap<Geoname>();                
+                BsonClassMap.RegisterClassMap<ImportedGeoname>();                
             }
         }
 
         public long GeonamesCount()
         {
-            var mongoCollection = _db.GetCollection<Geoname>(PlacesCollection).AsQueryable();
-            return mongoCollection.Count<Geoname>();
+            var mongoCollection = _db.GetCollection<ImportedGeoname>(PlacesCollection).AsQueryable();
+            return mongoCollection.Count<ImportedGeoname>();
         }
     }
 }

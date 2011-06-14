@@ -14,11 +14,11 @@ namespace GeoDataChangeNotifier
         public void Handle(GeoInfoImported message)
         {
             var geoName = message.GeoName;
-            if(geoName.IsPark)
+            if (geoName.IsPark)
             {
                 Logger.Info("Park information imported: " + message.GeoName.Name);
                 var rssPublisher = new RssPublisher();
-                rssPublisher.AddItem(message.GeoName);  
+                rssPublisher.AddItem(message.GeoName);
             }
         }
 

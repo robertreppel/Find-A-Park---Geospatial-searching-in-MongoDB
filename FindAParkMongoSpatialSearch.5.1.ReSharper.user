@@ -8,11 +8,11 @@
   </SettingsComponent>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="if" priority="2" />
+      <Item value="if" priority="3" />
       <Item value="args" priority="0" />
       <Item value="Count`1" priority="0" />
       <Item value="return" priority="2" />
-      <Item value="doImport" priority="0" />
+      <Item value="doImport" priority="1" />
       <Item value="private" priority="1" />
       <Item value="public" priority="2" />
       <Item value="Bus" priority="1" />
@@ -24,7 +24,7 @@
       <Item value="String`0" priority="1" />
       <Item value="geoName" priority="6" />
       <Item value="RssFeed`0" priority="3" />
-      <Item value="new" priority="3" />
+      <Item value="new" priority="5" />
       <Item value="RssChannel`0" priority="0" />
       <Item value="feed" priority="3" />
       <Item value="channel" priority="0" />
@@ -42,13 +42,13 @@
       <Item value="ApplicationServices" priority="0" />
       <Item value="siteHost" priority="0" />
       <Item value="message" priority="2" />
-      <Item value="Console`0" priority="3" />
+      <Item value="Console`0" priority="5" />
       <Item value="GeoInfoImportedMessageHandler`0" priority="1" />
       <Item value="EnvironmentVariableTarget`0" priority="0" />
       <Item value="ValueType`0" priority="0" />
       <Item value="readonly" priority="0" />
       <Item value="typeof" priority="0" />
-      <Item value="Logger" priority="0" />
+      <Item value="Logger" priority="1" />
       <Item value="name" priority="0" />
       <Item value="ParksRssFeedUri`0" priority="1" />
       <Item value="Uri" priority="0" />
@@ -60,6 +60,14 @@
       <Item value="Save`0" priority="0" />
       <Item value="this" priority="0" />
       <Item value="value" priority="0" />
+      <Item value="while" priority="0" />
+      <Item value="char" priority="1" />
+      <Item value="exit" priority="0" />
+      <Item value="false" priority="0" />
+      <Item value="throw" priority="1" />
+      <Item value="Exception" priority="1" />
+      <Item value="Exception`0" priority="0" />
+      <Item value="e" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:NServiceBus.Configure">
       <Item value="DefaultBuilder`0" priority="0" />
@@ -75,13 +83,14 @@
     <ItemStatistics item="Qualified:NServiceBus.Unicast.Transport.Msmq.Config.ConfigMsmqTransport">
       <Item value="DBSubcriptionStorage`0" priority="0" />
       <Item value="MsmqSubscriptionStorage`0" priority="0" />
-      <Item value="IsTransactional`0" priority="0" />
+      <Item value="IsTransactional`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@FakeItEasy.A">
       <Item value="Fake`1" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:log4net.ILog">
-      <Item value="Info`0" priority="3" />
+      <Item value="Info`0" priority="4" />
+      <Item value="Error`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:GeoData.Geoname">
       <Item value="GeonameId" priority="1" />
@@ -127,15 +136,15 @@
       <Item value="GeoName" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Console">
-      <Item value="ReadKey`0" priority="0" />
+      <Item value="ReadKey`0" priority="1" />
       <Item value="Write`0" priority="1" />
-      <Item value="WriteLine`0" priority="0" />
+      <Item value="WriteLine`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@log4net.LogManager">
       <Item value="GetLogger`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.String">
-      <Item value="Indexer" priority="0" />
+      <Item value="Indexer" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Argotic.Syndication.RssFeed">
       <Item value="Create`0" priority="0" />
@@ -145,6 +154,12 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.AppDomain">
       <Item value="BaseDirectory" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ConsoleKeyInfo">
+      <Item value="KeyChar" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
   <RecentFiles>
@@ -159,48 +174,48 @@
       <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:RssPublisher.cs" caret="860" fromTop="22" />
       <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/d:Controllers/f:HomeController.cs" caret="315" fromTop="13" />
       <File id="06AAE851-3837-42BB-B9FE-1BC1B1E3B829/f:Geoname.cs" caret="2941" fromTop="20" />
-      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:app.config" caret="278" fromTop="4" />
-      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:Program.cs" caret="924" fromTop="8" />
-      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Global.asax.cs" caret="1503" fromTop="16" />
-      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:GeoInfoImportedMessageHandler.cs" caret="652" fromTop="15" />
       <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/d:Views/d:Home/f:Index.cshtml" caret="281" fromTop="9" />
-      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="1262" fromTop="25" />
       <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:TestGeoNames.cs" caret="398" fromTop="13" />
       <File id="06AAE851-3837-42BB-B9FE-1BC1B1E3B829/f:MongoGeoDataStore.cs" caret="740" fromTop="0" />
-      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:GeoDataImporter.cs" caret="496" fromTop="0" />
-      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:TestGeoDataSearches.cs" caret="2352" fromTop="19" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:TestGeoDataSearches.cs" caret="350" fromTop="8" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:app.config" caret="2063" fromTop="11" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:GeoDataImporter.cs" caret="1198" fromTop="23" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:Program.cs" caret="2052" fromTop="12" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:GeoInfoImportedMessageHandler.cs" caret="820" fromTop="20" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="1283" fromTop="16" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Global.asax.cs" caret="997" fromTop="5" />
     </RecentFiles>
     <RecentEdits>
-      <File id="06AAE851-3837-42BB-B9FE-1BC1B1E3B829/f:Geoname.cs" caret="2941" fromTop="17" />
-      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:app.config" caret="2930" fromTop="23" />
-      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:app.config" caret="2518" fromTop="12" />
-      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:Program.cs" caret="308" fromTop="6" />
-      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:Program.cs" caret="710" fromTop="16" />
-      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:app.config" caret="2387" fromTop="17" />
-      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:GeoDataImporter.cs" caret="1809" fromTop="6" />
-      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Global.asax.cs" caret="1215" fromTop="11" />
-      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Global.asax.cs" caret="1776" fromTop="18" />
-      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:Program.cs" caret="1777" fromTop="23" />
-      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:app.config" caret="2063" fromTop="16" />
-      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:app.config" caret="2008" fromTop="16" />
       <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:app.config" caret="278" fromTop="4" />
-      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:Program.cs" caret="1352" fromTop="12" />
-      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="4698" fromTop="14" />
-      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:GeoInfoImportedMessageHandler.cs" caret="469" fromTop="15" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="4484" fromTop="14" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:GeoInfoImportedMessageHandler.cs" caret="876" fromTop="15" />
       <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:GeoDataImporter.cs" caret="1110" fromTop="20" />
-      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:Program.cs" caret="1014" fromTop="11" />
-      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="4698" fromTop="16" />
-      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="4698" fromTop="26" />
-      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="4698" fromTop="7" />
-      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="2069" fromTop="31" />
-      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="1245" fromTop="10" />
-      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:GeoInfoImportedMessageHandler.cs" caret="392" fromTop="9" />
-      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Global.asax.cs" caret="1530" fromTop="17" />
-      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="1109" fromTop="18" />
-      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="610" fromTop="10" />
-      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="1140" fromTop="19" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:Program.cs" caret="1593" fromTop="11" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="4484" fromTop="16" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="4484" fromTop="26" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="4484" fromTop="7" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="1128" fromTop="18" />
       <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/d:Views/d:Home/f:Index.cshtml" caret="148" fromTop="6" />
-      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="1643" fromTop="14" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:Program.cs" caret="1616" fromTop="27" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:Program.cs" caret="1572" fromTop="22" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:Program.cs" caret="663" fromTop="9" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:Program.cs" caret="609" fromTop="8" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:Program.cs" caret="1572" fromTop="23" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Global.asax.cs" caret="1227" fromTop="19" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="1851" fromTop="25" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="1427" fromTop="12" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="2137" fromTop="24" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Global.asax.cs" caret="1771" fromTop="20" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Global.asax.cs" caret="1317" fromTop="14" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="629" fromTop="12" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="1177" fromTop="23" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:Program.cs" caret="1858" fromTop="11" />
+      <File id="60D1303A-4739-46B5-B4E4-A38B8A0AF7C3/f:Program.cs" caret="1691" fromTop="5" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:GeoInfoImportedMessageHandler.cs" caret="876" fromTop="13" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:GeoInfoImportedMessageHandler.cs" caret="527" fromTop="10" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:GeoInfoImportedMessageHandler.cs" caret="860" fromTop="15" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Web.config" caret="1233" fromTop="15" />
+      <File id="C8C19C7F-B676-4F0A-8FA8-3BB3E653F842/f:Global.asax.cs" caret="1559" fromTop="18" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

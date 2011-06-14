@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Web.Mvc;
-using FindAPark.Models;
 using GeoData;
 
 namespace FindAPark.Controllers
 {
     public class GeoController : Controller
     {
-        private readonly IMuseums _museums;
         private readonly IGeoDataStore _geoDataStore;
 
         public GeoController(IGeoDataStore geoDataStore)

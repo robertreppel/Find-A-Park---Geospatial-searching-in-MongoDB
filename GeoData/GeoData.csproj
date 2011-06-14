@@ -87,8 +87,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ImportedGeoname.cs" />
     <Compile Include="Place.cs" />
-    <Compile Include="Geoname.cs" />
     <Compile Include="IGeoDataStore.cs" />
     <Compile Include="MongoGeoDataStore.cs" />
     <Compile Include="Park.cs" />
@@ -97,6 +97,12 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Messages\Messages.csproj">
+      <Project>{D042D918-B3D9-4C49-8708-26BC2CDC5024}</Project>
+      <Name>Messages</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

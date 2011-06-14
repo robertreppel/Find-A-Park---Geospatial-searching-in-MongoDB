@@ -4,6 +4,7 @@ using System.Text;
 using FakeItEasy;
 using GeoData;
 using log4net;
+using Messages;
 using NUnit.Framework;
 
 namespace GeoInfoImport
@@ -23,7 +24,7 @@ namespace GeoInfoImport
             geoDataImporter.ImportGeonamesFrom(fileName);
 
             A.CallTo(() => log.Info(null)).WithAnyArguments().MustHaveHappened(Repeated.Exactly.Times(357));
-            A.CallTo(() => geoRepository.Save(new Geoname())).WithAnyArguments().MustHaveHappened(Repeated.Exactly.Times(357));
+            A.CallTo(() => geoRepository.Save(new ImportedGeoname())).WithAnyArguments().MustHaveHappened(Repeated.Exactly.Times(357));
         }
 
     }

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoDataChangeNotifier", "Ge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messages", "Messages\Messages.csproj", "{D042D918-B3D9-4C49-8708-26BC2CDC5024}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssFeedUpdater", "RssFeedUpdater\RssFeedUpdater.csproj", "{28DE496A-3885-410E-A0B8-004FAEFF9378}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,16 @@ Global
 		{D042D918-B3D9-4C49-8708-26BC2CDC5024}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{D042D918-B3D9-4C49-8708-26BC2CDC5024}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{D042D918-B3D9-4C49-8708-26BC2CDC5024}.Release|x86.ActiveCfg = Release|Any CPU
+		{28DE496A-3885-410E-A0B8-004FAEFF9378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28DE496A-3885-410E-A0B8-004FAEFF9378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28DE496A-3885-410E-A0B8-004FAEFF9378}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{28DE496A-3885-410E-A0B8-004FAEFF9378}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{28DE496A-3885-410E-A0B8-004FAEFF9378}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{28DE496A-3885-410E-A0B8-004FAEFF9378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28DE496A-3885-410E-A0B8-004FAEFF9378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28DE496A-3885-410E-A0B8-004FAEFF9378}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{28DE496A-3885-410E-A0B8-004FAEFF9378}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{28DE496A-3885-410E-A0B8-004FAEFF9378}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

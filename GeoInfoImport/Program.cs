@@ -57,7 +57,7 @@ namespace GeoInfoImport
                 .DefaultBuilder()
                 .XmlSerializer()
                 .MsmqTransport()
-                    .IsTransactional(true)
+                    .IsTransactional(false)
                 .MsmqSubscriptionStorage()
                 .UnicastBus()
                 .LoadMessageHandlers()

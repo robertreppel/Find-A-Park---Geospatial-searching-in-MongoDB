@@ -48,7 +48,7 @@ namespace GeoDataChangeNotifier
                 .DefaultBuilder()
                 .XmlSerializer()
                 .MsmqTransport()
-                    .IsTransactional(false)
+                    .IsTransactional(true)
                 .UnicastBus()
                 .LoadMessageHandlers()
                 .CreateBus()

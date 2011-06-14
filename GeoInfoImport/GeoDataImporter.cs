@@ -21,16 +21,17 @@ namespace GeoInfoImport
 
         public void ImportGeonamesFrom(string fileName)
         {
-            var geoNames = new FileHelperAsyncEngine(typeof(Geoname));
+            var geoNames = new FileHelperAsyncEngine(typeof(ImportedGeoname));
             geoNames.BeginReadFile(fileName);
 
             _geoDataStore.DeleteAll();
 
             long cnt = 0;
-            foreach (Geoname geoName in geoNames)
+            foreach (ImportedGeoname importedGeoname in geoNames)
             {
                 //Store the name in a format suitable for case-insensitive searching:
-                geoName.Name = geoName.Name.ToUpper();
+                importedGeoname.Name = importedGeoname.Name.ToUpper();
+                var geoName = importedGeoname.ToGeoName();
 
                 if (Bus != null)
                 {
@@ -41,13 +42,13 @@ namespace GeoInfoImport
 
                 if (geoName.IsCity)
                 {
-                    SaveCity(geoName, cnt);
+                    SaveCity(importedGeoname, cnt);
                 }
 
                 // Parks: http://127.0.0.1:28017/local/geonames/?filter_FeatureClass=L&filter_FeatureCode=PRK
                 if(geoName.IsPark)
                 {
-                    SavePark(geoName);
+                    SavePark(importedGeoname);
                 }
 
                 cnt++;
@@ -58,13 +59,13 @@ namespace GeoInfoImport
             geoNames.Close();
         }
 
-        private void SaveCity(Geoname geoName, long cnt)
+        private void SaveCity(ImportedGeoname geoName, long cnt)
         {
             _geoDataStore.Save(geoName);
             _log.Info(String.Format("Id: {0}, Name: {1}, State: {2}", geoName.GeonameId, geoName.Name, geoName.StateCode));
         }
 
-        private void SavePark(Geoname geoName)
+        private void SavePark(ImportedGeoname geoName)
         {
             var park = new Park {GeonameId = geoName.GeonameId, Name = geoName.Asciiname};
             //Store lat and long in a format fit for geospatial indexing:

@@ -2,6 +2,7 @@
 using System.IO;
 using Argotic.Syndication;
 using GeoData;
+using Messages;
 
 namespace GeoDataChangeNotifier
 {
