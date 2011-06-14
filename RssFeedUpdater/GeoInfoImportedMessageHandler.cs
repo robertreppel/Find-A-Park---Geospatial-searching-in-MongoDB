@@ -1,4 +1,5 @@
-﻿using log4net;
+﻿using System;
+using log4net;
 using Messages;
 using NServiceBus;
 
@@ -8,6 +9,8 @@ namespace RssFeedUpdater
     {
         public void Handle(GeoInfoImported message)
         {
+            //throw new Exception("BANG");
+
             var geoName = message.GeoName;
             if (geoName.IsPark)
             {
