@@ -25,18 +25,7 @@ namespace GeoInfoImport
             foreach (Geoname geoName in geoNames)
             {
                 //Store the name in a format suitable for case-insensitive searching:
-                geoName.Name = geoName.Name.ToUpper();
-
-                if (geoName.FeatureClass == "P")
-                {
-                    SaveCity(geoName, cnt);
-                }
-
-                // Parks: http://127.0.0.1:28017/local/geonames/?filter_FeatureClass=L&filter_FeatureCode=PRK
-                if(geoName.FeatureClass.Equals("L") && geoName.FeatureCode.Equals("PRK"))
-                {
-                    SavePark(geoName);
-                }
+                ImportItem(geoName, cnt);
 
                 cnt++;
             }
@@ -44,6 +33,22 @@ namespace GeoInfoImport
             _geoDataStore.DoIndexing();
 
             geoNames.Close();
+        }
+
+        private void ImportItem(Geoname geoName, long cnt)
+        {
+            geoName.Name = geoName.Name.ToUpper();
+
+            if (geoName.FeatureClass == "P")
+            {
+                SaveCity(geoName, cnt);
+            }
+
+            // Parks: http://127.0.0.1:28017/local/geonames/?filter_FeatureClass=L&filter_FeatureCode=PRK
+            if(geoName.FeatureClass.Equals("L") && geoName.FeatureCode.Equals("PRK"))
+            {
+                SavePark(geoName);
+            }
         }
 
         private void SaveCity(Geoname geoName, long cnt)

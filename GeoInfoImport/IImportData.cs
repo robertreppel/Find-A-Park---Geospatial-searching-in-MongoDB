@@ -1,4 +1,6 @@
-﻿namespace GeoInfoImport
+﻿using GeoData;
+
+namespace GeoInfoImport
 {
     public interface IImportData
     {

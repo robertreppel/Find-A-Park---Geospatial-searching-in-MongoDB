@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
+using Castle.Core;
+using Castle.DynamicProxy;
 using Castle.MicroKernel.Registration;
 using Castle.Windsor;
 using EventSource;
@@ -36,16 +39,29 @@ namespace GeoInfoImport
         private static WindsorContainer InitializeIocContainer()
         {
             var container = new WindsorContainer();
-            container.Register(
-                Component.For<IImportData>().ImplementedBy<GeoDataImporter>());
+            container.Register(Component.For<IImportData>().ImplementedBy<GeoDataImporter>());
             container.Register(Component.For<ILog>().ImplementedBy<Log>());
             container.Register(Component.For<IGeoDataStore>().ImplementedBy<MongoGeoDataStore>());
-            container.Register(Component.For<EventSourceAspect>());
+
+            RegisterAopInterceptors(container);
 
             container.Kernel.ProxyFactory.AddInterceptorSelector(
                     new ModelInterceptorsSelector()
                 );
             return container;
+        }
+
+        private static void RegisterAopInterceptors(WindsorContainer container)
+        {
+            Assembly asm = Assembly.Load("EventSource");
+            Type ti = typeof(IInterceptor);
+            foreach (Type t in asm.GetTypes())
+            {
+                if (ti.IsAssignableFrom(t))
+                {
+                    container.Register(Component.For(t));
+                }
+            }
         }
 
         private static bool AreThereValidParametersForDataImportIn(string[] args)
