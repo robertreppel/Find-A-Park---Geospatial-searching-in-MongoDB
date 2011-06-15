@@ -29,6 +29,10 @@ namespace GeoInfoImport
 
         private static bool AreThereValidParametersForDataImportIn(string[] args)
         {
+            if(args.Count() == 0)
+            {
+                return false;
+            }
             bool doImport = false;
             if (!String.IsNullOrEmpty(args[0]))
             {

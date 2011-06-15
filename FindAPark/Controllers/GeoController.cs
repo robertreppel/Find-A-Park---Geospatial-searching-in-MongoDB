@@ -10,7 +10,6 @@ namespace FindAPark.Controllers
 {
     public class GeoController : Controller
     {
-        private readonly IMuseums _museums;
         private readonly IGeoDataStore _geoDataStore;
 
         public GeoController(IGeoDataStore geoDataStore)
