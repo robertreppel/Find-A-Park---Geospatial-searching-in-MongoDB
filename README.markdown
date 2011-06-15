@@ -1,4 +1,4 @@
-Find A Park Near You
+## Find A Park Near You
 
 * Written during the ALT.NET Seattle Conference 2011 http://altnet2011.heroku.com/. Wanted to try out some MongoDB. 
 
