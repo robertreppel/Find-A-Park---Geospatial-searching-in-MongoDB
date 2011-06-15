@@ -101,6 +101,7 @@
       <HintPath>..\packages\Simple.Data.MongoDB.0.6.1\lib\net40\Simple.Data.MongoDB.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />

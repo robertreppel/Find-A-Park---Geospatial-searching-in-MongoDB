@@ -52,7 +52,9 @@
     <Compile Include="NewParkAspect.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="NewPlaceAspect.cs" />
+    <Compile Include="NewPlaceAspect.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

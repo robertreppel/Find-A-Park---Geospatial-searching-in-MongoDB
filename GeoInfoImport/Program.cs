@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using Castle.Core;
 using Castle.DynamicProxy;
 using Castle.MicroKernel.Registration;
 using Castle.Windsor;
-using EventSource;
 using GeoData;
 
 namespace GeoInfoImport
@@ -52,7 +49,8 @@ namespace GeoInfoImport
 
         private static void RegisterAopInterceptors(WindsorContainer container)
         {
-            Assembly asm = Assembly.Load("EventSource");
+            string assemblyContainingInterceptors = ConfigurationManager.AppSettings["AssemblyContainingInterceptors"];
+            Assembly asm = Assembly.Load(assemblyContainingInterceptors);
             Type ti = typeof(IInterceptor);
             foreach (Type t in asm.GetTypes())
             {
