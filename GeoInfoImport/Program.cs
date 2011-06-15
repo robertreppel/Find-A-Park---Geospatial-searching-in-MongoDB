@@ -27,12 +27,11 @@ namespace GeoInfoImport
 
                 var importer = container.Resolve<IImportData>();
                 importer.ImportFromFile(args[1]);
-                Console.WriteLine("Finished import at: {0}", DateTime.Now.ToShortTimeString());
 
+                Console.WriteLine("Finished import at: {0}", DateTime.Now.ToShortTimeString());
                 var geoRepository = container.Resolve<IGeoDataStore>();
                 Console.WriteLine("No. of geonames in DB: {0}", geoRepository.GeonamesCount());
             }
-
             Console.ReadKey();
         }
 
