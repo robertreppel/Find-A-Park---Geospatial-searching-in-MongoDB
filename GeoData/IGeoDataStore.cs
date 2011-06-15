@@ -11,5 +11,6 @@ namespace GeoData
         void Save(Park geoname);
         void DoIndexing();
         void DeleteAll();
+        long GeonamesCount();
     }
 }

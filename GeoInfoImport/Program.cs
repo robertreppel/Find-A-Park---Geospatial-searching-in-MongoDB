@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using Castle.MicroKernel.Registration;
+using Castle.Windsor;
+using EventSource;
 using GeoData;
 
 namespace GeoInfoImport
@@ -11,20 +14,38 @@ namespace GeoInfoImport
     {
         static void Main(string[] args)
         {
+            var container = InitializeIocContainer();
+
             bool doImport = AreThereValidParametersForDataImportIn(args);
 
-            var geoRepository = new MongoGeoDataStore();
             if(doImport)
             {
                 Console.WriteLine("Started import at: {0}", DateTime.Now.ToShortTimeString());
-                var importer = new GeoDataImporter(new Log(), geoRepository);
-                importer.ImportGeonamesFrom(args[1]);
+
+                var importer = container.Resolve<IImportData>();
+                importer.ImportFromFile(args[1]);
                 Console.WriteLine("Finished import at: {0}", DateTime.Now.ToShortTimeString());
+
+                var geoRepository = container.Resolve<IGeoDataStore>();
                 Console.WriteLine("No. of geonames in DB: {0}", geoRepository.GeonamesCount());
             }
 
-
             Console.ReadKey();
+        }
+
+        private static WindsorContainer InitializeIocContainer()
+        {
+            var container = new WindsorContainer();
+            container.Register(
+                Component.For<IImportData>().ImplementedBy<GeoDataImporter>());
+            container.Register(Component.For<ILog>().ImplementedBy<Log>());
+            container.Register(Component.For<IGeoDataStore>().ImplementedBy<MongoGeoDataStore>());
+            container.Register(Component.For<EventSourceAspect>());
+
+            container.Kernel.ProxyFactory.AddInterceptorSelector(
+                    new ModelInterceptorsSelector()
+                );
+            return container;
         }
 
         private static bool AreThereValidParametersForDataImportIn(string[] args)

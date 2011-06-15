@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using GeoData;
 using NUnit.Framework;
+using SharpTestsEx;
 
 namespace GeoInfoImport
 {
@@ -22,7 +23,7 @@ namespace GeoInfoImport
             var log = new Log();
             var geoRepository = new MongoGeoDataStore(ConnectionString, MongoDbName);
             var geoDataImporter = new GeoDataImporter(log, geoRepository);
-            geoDataImporter.ImportGeonamesFrom(testDataFile);
+            geoDataImporter.ImportFromFile(testDataFile);
 	    }
     }
 
@@ -42,7 +43,8 @@ namespace GeoInfoImport
             List<Place> places = _geoDataStore.PlacesStartingWith("Wi".ToUpper());
 
             CollectionAssert.IsNotEmpty(places);
-            Assert.IsTrue(places.Count == 3);
+            (places.Count == 3).Should().Be.True();
+            
         }
 
         [Test]

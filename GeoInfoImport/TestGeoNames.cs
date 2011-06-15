@@ -19,7 +19,7 @@ namespace GeoInfoImport
             var log = A.Fake<ILog>();
             var geoRepository = A.Fake<IGeoDataStore>();
             var geoDataImporter = new GeoDataImporter(log, geoRepository);
-            geoDataImporter.ImportGeonamesFrom(fileName);
+            geoDataImporter.ImportFromFile(fileName);
 
             A.CallTo(() => log.WriteInfoAbout(null, 0)).WithAnyArguments().MustHaveHappened(Repeated.Exactly.Times(357));
             A.CallTo(() => geoRepository.Save(new Geoname())).WithAnyArguments().MustHaveHappened(Repeated.Exactly.Times(357));

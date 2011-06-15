@@ -1,10 +1,9 @@
-﻿using System.Collections.Generic;
-using FileHelpers;
+﻿using FileHelpers;
 using GeoData;
 
 namespace GeoInfoImport
 {
-    internal class GeoDataImporter    
+    internal class GeoDataImporter : IImportData
     {
         private readonly ILog _log;
         private readonly IGeoDataStore _geoDataStore;
@@ -15,7 +14,7 @@ namespace GeoInfoImport
             _geoDataStore = geoDataStore;
         }
 
-        public void ImportGeonamesFrom(string fileName)
+        public void ImportFromFile(string fileName)
         {
             var geoNames = new FileHelperAsyncEngine(typeof(Geoname));
             geoNames.BeginReadFile(fileName);
