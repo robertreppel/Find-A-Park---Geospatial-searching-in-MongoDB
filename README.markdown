@@ -1,4 +1,4 @@
-## This sample application was used as the starting point for my "NServiceBus: From Batch Processing to Asynchronous Messaging, By Example" dojo at http://prairiedevcon.com/home:
+## This sample application was used as the starting point for my "NServiceBus: From Batch Processing to Asynchronous Messaging, By Example" dojo at http://prairiedevcon.com/home
 
 ###Abstract:
 
